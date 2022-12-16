@@ -1,0 +1,22 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+	int n,i;
+	cout<<"enter the  size of array=";
+	cin>>n;
+	vector<int>arr(n);
+	for(int i=0;i<n;++i)
+		cin>>arr[i];
+	map<int,int>ferq;
+	for(i=0;i<n;i++)
+	{
+		ferq[arr[i]]++;
+	}
+	//for(int num:arr):
+	//	ferq[num]++;
+	for(auto i:ferq){
+		//if(i.second==1)
+		cout<<i.first<<" "<<i.second<<endl;
+	}
+	return 0;
+}
